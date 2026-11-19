@@ -1,0 +1,123 @@
+{
+  "status": "VERIFIED",
+  "started_utc": "2026-11-18T09:48:16.922409+00:00",
+  "finished_utc": "2026-11-18T09:48:21.611282+00:00",
+  "wall_s": 4.688873,
+  "scope": "Sensor values read for fit/pilot FS1 and pilot PS1/PS2. Existing unstable and level-held-out predictions reaggregated without forest refit.",
+  "result_sha256": "26acc1ca180ce73cac07a14047c171a674423c0bda35e784405c19006349a198",
+  "audit_source_sha256": "9228787f6da55b96df2b1efcae3413ec7a650f1c7ed9ae03bca96a0d6eb71d74",
+  "source_hashes_matched": 9,
+  "networkx_version": "3.3",
+  "methods": "Integer derivative-event sweep for pair extrema, witness replay, maximum compatibility clique without MILP for single windows, equal-weight grade and condition tabulation.",
+  "clipping": {
+    "extrema_and_witness_pairs_checked": 1800,
+    "floor_event_sweeps": 900,
+    "maximum_cliques_all_cases": 720,
+    "maximum_cliques_with_floor": 360,
+    "scenarios": [
+      {
+        "floor": false,
+        "B_l_min": 0.0,
+        "two_mean_ba_exact": "271/300",
+        "single_mean_upper_ba_exact": "1",
+        "balanced_gap_exact": "-29/300",
+        "independent_maximum_cliques": 120
+      },
+      {
+        "floor": false,
+        "B_l_min": 0.1,
+        "two_mean_ba_exact": "271/300",
+        "single_mean_upper_ba_exact": "203/300",
+        "balanced_gap_exact": "17/75",
+        "independent_maximum_cliques": 120
+      },
+      {
+        "floor": false,
+        "B_l_min": 0.3,
+        "two_mean_ba_exact": "271/300",
+        "single_mean_upper_ba_exact": "39/100",
+        "balanced_gap_exact": "77/150",
+        "independent_maximum_cliques": 120
+      },
+      {
+        "floor": true,
+        "B_l_min": 0.0,
+        "two_mean_ba_exact": "271/300",
+        "single_mean_upper_ba_exact": "1",
+        "balanced_gap_exact": "-29/300",
+        "independent_maximum_cliques": 120
+      },
+      {
+        "floor": true,
+        "B_l_min": 0.1,
+        "two_mean_ba_exact": "193/300",
+        "single_mean_upper_ba_exact": "203/300",
+        "balanced_gap_exact": "-1/30",
+        "independent_maximum_cliques": 120
+      },
+      {
+        "floor": true,
+        "B_l_min": 0.3,
+        "two_mean_ba_exact": "47/150",
+        "single_mean_upper_ba_exact": "39/100",
+        "balanced_gap_exact": "-23/300",
+        "independent_maximum_cliques": 120
+      }
+    ]
+  },
+  "predictions": {
+    "csv_rows": 4503,
+    "group_grade_stat_collections": 49,
+    "balanced_scores": {
+      "original_pilot/all/two_means": 0.9033333333333333,
+      "original_pilot/all/single_wave": 0.7566666666666667,
+      "original_pilot/all/two_wave": 0.99,
+      "unstable/all/two_means": 0.8026353583225622,
+      "unstable/all/single_wave": 0.5927761022547753,
+      "unstable/all/two_wave": 0.9974747474747475,
+      "cooler/3/two_means": 0.4095238095238095,
+      "cooler/3/single_wave": 0.2904761904761905,
+      "cooler/3/two_wave": 0.5738095238095238,
+      "cooler/20/two_means": 0.9888888888888889,
+      "cooler/20/single_wave": 0.3527777777777778,
+      "cooler/20/two_wave": 0.8888888888888888,
+      "cooler/100/two_means": 0.6777777777777778,
+      "cooler/100/single_wave": 0.37222222222222223,
+      "cooler/100/two_wave": 0.7638888888888888,
+      "cooler/pooled/two_means": 0.6771929824561403,
+      "cooler/pooled/single_wave": 0.33596491228070174,
+      "cooler/pooled/two_wave": 0.7333333333333333,
+      "valve/73/two_means": 0.8444444444444444,
+      "valve/73/single_wave": 0.6703703703703704,
+      "valve/73/two_wave": 0.9666666666666667,
+      "valve/80/two_means": 0.8606060606060606,
+      "valve/80/single_wave": 0.7121212121212122,
+      "valve/80/two_wave": 0.9787878787878788,
+      "valve/90/two_means": 0.8444444444444444,
+      "valve/90/single_wave": 0.7037037037037037,
+      "valve/90/two_wave": 0.9740740740740741,
+      "valve/100/two_means": 0.8185185185185185,
+      "valve/100/single_wave": 0.6799220272904484,
+      "valve/100/two_wave": 0.9851851851851852,
+      "valve/pooled/two_means": 0.8429824561403508,
+      "valve/pooled/single_wave": 0.6926131117266852,
+      "valve/pooled/two_wave": 0.9763157894736842,
+      "accumulator/90/two_means": 0.8166666666666667,
+      "accumulator/90/single_wave": 0.53,
+      "accumulator/90/two_wave": 0.9366666666666666,
+      "accumulator/100/two_means": 0.861904761904762,
+      "accumulator/100/single_wave": 0.6190476190476191,
+      "accumulator/100/two_wave": 0.9857142857142858,
+      "accumulator/115/two_means": 0.9033333333333333,
+      "accumulator/115/single_wave": 0.49,
+      "accumulator/115/two_wave": 0.9733333333333334,
+      "accumulator/130/two_means": 0.7818181818181819,
+      "accumulator/130/single_wave": 0.47878787878787876,
+      "accumulator/130/two_wave": 0.8303030303030303,
+      "accumulator/pooled/two_means": 0.8377192982456141,
+      "accumulator/pooled/single_wave": 0.5210526315789473,
+      "accumulator/pooled/two_wave": 0.9245614035087719
+    }
+  },
+  "phase_quantile_and_fraction_checks": 85
+}

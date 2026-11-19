@@ -1,0 +1,134 @@
+{
+  "start_utc": "2026-11-18T09:48:04.229348+00:00",
+  "end_utc": "2026-11-18T09:48:11.774359+00:00",
+  "scope": "fit=849, pilot=300, new confirmation rows=0",
+  "results": {
+    "one": {
+      "-1": {
+        "fixed": 177,
+        "known_phase": 223,
+        "0.1": {
+          "pass": 177,
+          "fail": 123,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 177,
+          "fail": 123,
+          "unknown": 0
+        }
+      },
+      "0": {
+        "fixed": 227,
+        "known_phase": 227,
+        "0.1": {
+          "pass": 227,
+          "fail": 73,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 227,
+          "fail": 73,
+          "unknown": 0
+        }
+      },
+      "1": {
+        "fixed": 186,
+        "known_phase": 220,
+        "0.1": {
+          "pass": 186,
+          "fail": 114,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 186,
+          "fail": 114,
+          "unknown": 0
+        }
+      },
+      "all_shifts": {
+        "fixed": 137,
+        "known_phase": 207,
+        "0.1": {
+          "pass": 137,
+          "fail": 163,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 137,
+          "fail": 163,
+          "unknown": 0
+        }
+      }
+    },
+    "two": {
+      "-1": {
+        "fixed": 101,
+        "known_phase": 296,
+        "0.1": {
+          "pass": 101,
+          "fail": 199,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 99,
+          "fail": 201,
+          "unknown": 0
+        }
+      },
+      "0": {
+        "fixed": 297,
+        "known_phase": 297,
+        "0.1": {
+          "pass": 174,
+          "fail": 126,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 100,
+          "fail": 200,
+          "unknown": 0
+        }
+      },
+      "1": {
+        "fixed": 271,
+        "known_phase": 294,
+        "0.1": {
+          "pass": 172,
+          "fail": 128,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 100,
+          "fail": 200,
+          "unknown": 0
+        }
+      },
+      "all_shifts": {
+        "fixed": 96,
+        "known_phase": 293,
+        "0.1": {
+          "pass": 72,
+          "fail": 228,
+          "unknown": 0
+        },
+        "0.3": {
+          "pass": 1,
+          "fail": 299,
+          "unknown": 0
+        }
+      }
+    }
+  },
+  "hashes": {
+    "assets/uci447.zip": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "runs/h-pilot-20261118T054802882611Z/split.csv": "9e0082df0e50c3aab6a0f9a27024e473bb4bff54adddb3e8495a39e93ae625c3",
+    "protocols/u-paper-wave-acquisition.md": "429e8d19c7d9e1da743fdc76a8d5e1c8249ea63dab0104cbab913b6e5e788687",
+    "code/u_paper_wave_acquisition.py": "26e9b4f4c3f02cbf244e64838609da73a56bac57d8e3be14279b75ba6b91cd0d",
+    "code/u_followup_c.py": "3e5bc0940ff455e8612d27646d400ac82e4df270d9144a9df50422accd7931b3",
+    "code/u_wave_gain_engine.py": "695a36953ef434a04e4c87b9118bde34f85e6b372c500731b89dfd2451125b9c",
+    "code/flow_shape_control.py": "c6d08164ed7489344914c4cacc7f83498a95a8eada3a327705e6d3f45c9d65c1",
+    "code/hydraulic_screen.py": "472668b3dff7359eaa131e67709aa0b1435da0b1b3096cd73e1555dd2731600c",
+    "runs/u-paper-wave-acquisition/cycles.csv": "d1185d57e8c18c917040fc8ca6a9ec090176ab2aba1edb4637ba1066b7b0c655"
+  }
+}

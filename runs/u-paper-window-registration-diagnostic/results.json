@@ -1,0 +1,215 @@
+{
+  "verified": 600,
+  "reference": "direct decimal parse and direct sums of the two 50-sample slices",
+  "difference_identity": "50*(d(0.1)-d(0)) = x[50]-x[0]-x[550]+x[500]",
+  "start_utc": "2026-11-18T09:43:13.891742+00:00",
+  "end_utc": "2026-11-18T09:43:14.238259+00:00",
+  "by_grade": [
+    {
+      "grade": 0,
+      "n": 100,
+      "nominal_correct": 92,
+      "at_plus_point1_correct": 100,
+      "both_correct": 92,
+      "median_change_in_delta_l_min": -0.16466,
+      "min_change_l_min": -0.18482,
+      "max_change_l_min": -0.14944,
+      "median_first_mean_change_l_min": -0.16643000000000002,
+      "median_last_mean_change_l_min": -0.00136,
+      "median_edges_l_min_x0_x50_x500_x550": [
+        8.323,
+        0.001,
+        7.900499999999999,
+        7.798500000000001
+      ],
+      "negative_zero_positive_delta_n": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "grade": 1,
+      "n": 100,
+      "nominal_correct": 85,
+      "at_plus_point1_correct": 18,
+      "both_correct": 4,
+      "median_change_in_delta_l_min": -0.16233999999999998,
+      "min_change_l_min": -0.23204,
+      "max_change_l_min": -0.13512,
+      "median_first_mean_change_l_min": -0.16394,
+      "median_last_mean_change_l_min": -0.0007700000000000001,
+      "median_edges_l_min_x0_x50_x500_x550": [
+        8.199000000000002,
+        0.001,
+        7.640000000000001,
+        7.573499999999999
+      ],
+      "negative_zero_positive_delta_n": [
+        100,
+        0,
+        0
+      ]
+    },
+    {
+      "grade": 2,
+      "n": 100,
+      "nominal_correct": 94,
+      "at_plus_point1_correct": 11,
+      "both_correct": 11,
+      "median_change_in_delta_l_min": -0.16092,
+      "min_change_l_min": -0.1749,
+      "max_change_l_min": -0.14488,
+      "median_first_mean_change_l_min": -0.16367,
+      "median_last_mean_change_l_min": -0.0012599999999999998,
+      "median_edges_l_min_x0_x50_x500_x550": [
+        8.184999999999999,
+        0.001,
+        7.561999999999999,
+        7.462
+      ],
+      "negative_zero_positive_delta_n": [
+        100,
+        0,
+        0
+      ]
+    }
+  ],
+  "models": {
+    "original": {
+      "nominal_fixed_n": 271,
+      "plus_point1_fixed_n": 129,
+      "both_phases_n": 107,
+      "grade_counts_nominal_shift_both": [
+        [
+          92,
+          100,
+          92
+        ],
+        [
+          85,
+          18,
+          4
+        ],
+        [
+          94,
+          11,
+          11
+        ]
+      ]
+    },
+    "known_phase_matched": {
+      "nominal_fixed_n": 271,
+      "plus_point1_fixed_n": 266,
+      "both_phases_n": 265,
+      "grade_counts_nominal_shift_both": [
+        [
+          92,
+          86,
+          86
+        ],
+        [
+          85,
+          85,
+          85
+        ],
+        [
+          94,
+          95,
+          94
+        ]
+      ]
+    },
+    "shifted_model_at_both_phases": {
+      "nominal_fixed_n": 100,
+      "plus_point1_fixed_n": 266,
+      "both_phases_n": 95,
+      "grade_counts_nominal_shift_both": [
+        [
+          0,
+          86,
+          0
+        ],
+        [
+          0,
+          85,
+          0
+        ],
+        [
+          100,
+          95,
+          95
+        ]
+      ]
+    },
+    "pooled_unknown_phase": {
+      "nominal_fixed_n": 215,
+      "plus_point1_fixed_n": 167,
+      "both_phases_n": 89,
+      "grade_counts_nominal_shift_both": [
+        [
+          72,
+          100,
+          72
+        ],
+        [
+          43,
+          54,
+          4
+        ],
+        [
+          100,
+          13,
+          13
+        ]
+      ]
+    },
+    "optimized_unknown_phase": {
+      "nominal_fixed_n": 192,
+      "plus_point1_fixed_n": 199,
+      "both_phases_n": 191,
+      "grade_counts_nominal_shift_both": [
+        [
+          92,
+          100,
+          92
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          100,
+          99,
+          99
+        ]
+      ]
+    }
+  },
+  "fit_cutoffs_l_min": [
+    -7.52552,
+    -7.52552
+  ],
+  "fit_maximum_unknown_phase_group_grade_balanced_accuracy": 0.6095238095238096,
+  "medians_l_min": {
+    "nominal": [
+      -7.64376,
+      -7.40697,
+      -7.29443
+    ],
+    "shifted": [
+      -7.81188,
+      -7.57323,
+      -7.45465
+    ],
+    "pooled": [
+      -7.6823,
+      -7.4653,
+      -7.35248
+    ]
+  },
+  "source_file_sha256": "46b48bccee3076af3505f998f6ae484ad7b1377eb7a30eee5ab3307c2c0fa8e3",
+  "registration_cycles_sha256": "bb40ef7b628d8c4fbe7254967bcdbadf3603f732fd3f0ebf968a8a7280cc3941",
+  "prediction_csv_sha256": "742b049f3d9efd1a5c5f2060701ce9cefb7919fccd4e3a0d090ca805dcab81f5"
+}

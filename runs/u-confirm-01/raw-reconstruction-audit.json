@@ -1,0 +1,181 @@
+{
+  "audit_utc_start": "2026-11-18T06:18:44.772315+00:00",
+  "audit_utc_end": "2026-11-18T06:18:45.297632+00:00",
+  "wall_s": 0.5310000000754371,
+  "cpu_s": 0.515625,
+  "affinity": [
+    0
+  ],
+  "coverage": "Archive FS1 rows with roles fit and confirm only, all profile/split metadata; exact integer parser and independent prefix-max oracle",
+  "frozen_then_opened_then_ran": [
+    "2026-11-18T06:15:33.936531+00:00",
+    "2026-11-18T06:15:50.077820+00:00",
+    "2026-11-18T06:15:50.077820+00:00",
+    "2026-11-18T06:15:50.711516+00:00"
+  ],
+  "all_13_locked_hashes_match": true,
+  "sha256": {
+    "code/window_bound.py": "b6bbe6ae5d485f5337e623e776b3e888203a808173c8386f47efc33289d56624",
+    "code/hydraulic_screen.py": "472668b3dff7359eaa131e67709aa0b1435da0b1b3096cd73e1555dd2731600c",
+    "code/window_bound_milp_audit.py": "9d162db1403343c82a421057435235bd09355ae72ebd119f8550f8579a881106",
+    "code/window_boundary_threshold.py": "f1fb160d9cb03759d17aa812f74245b78ff1b0b86b0af005f328eb3b38a3f972",
+    "assets/uci447.zip": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "protocols/u-confirm-v1.md": "08fc13e7611395d660017f0963d43af5414eb11b1bf3b914ce31abb746280088",
+    "protocols/u-window-identifiability-v1.md": "df62a8d6f600c1933f3ea00f16b22ee15e7f3401676810cbb52e315b58d7672b",
+    "runs/h-pilot-20261118T054802882611Z/split.csv": "9e0082df0e50c3aab6a0f9a27024e473bb4bff54adddb3e8495a39e93ae625c3",
+    "runs/u-pilot-02/results.json": "54cfcdbffce4e810c5eb51f53d1fa1323f795268a1ab19093580bc89b5c7d97e",
+    "runs/u-pilot-02/independent-milp.json": "075d036c6a42b4965662dc7bd7cfdea220f28f825d8381c2eb50314c5c0d71af",
+    "runs/u-pilot-02/critical-offset.json": "3ec7a97bfedec7306c4e6ecb8fea70ff4991fc4b2dda2075ad589235cb5d078d",
+    "runs/u-shape-pilot/result.json": "3404bd83dced71fa7cade35aa0eda8976ed589d738338c91c87814b73ac69577",
+    "review/u-exposure-and-scope.md": "7a6fd820380b91b34468cdf1ee3df307a4725bc2e5501852e41b188f89d7e96b",
+    "protocols/confirmation-lock.json": "c267e31e952bc921d7c43368edf41d5d7a70f8e35bf9107d177b2a9fd7f19c53",
+    "analysis/confirmation-consumed.json": "79c117acbaace25406705f50d4dc7d49a734d648d0ac0e6dcd99635a6428c6b4",
+    "runs/u-confirm-01/panel.csv": "9ca2f210e55344f24fb234d572af99ce413a680d2e45544a0a773e30d89bdb5b",
+    "runs/u-confirm-01/results.json": "7f0a9fb8890d5fb82163fdd216a5c985cbc4fea1a30d13115bcdd494fa26c2aa",
+    "code/audit_flow_confirm_raw.py": "8d1ca75bf6cc2c74feacdaa024b18843fb0c8af8ffedbd20d1d6a55f50986aa6"
+  },
+  "verified_split_rows": {
+    "fit": 849,
+    "pilot": 300,
+    "confirm": 300
+  },
+  "verified_split_groups": {
+    "fit": 28,
+    "pilot": 10,
+    "confirm": 10
+  },
+  "row_and_condition_disjoint": true,
+  "fit_double_centers_integer": [
+    -764376000,
+    -740697000,
+    -729443000
+  ],
+  "fit_centers_l_min": [
+    -7.64376,
+    -7.40697,
+    -7.29443
+  ],
+  "exact_confirmation_integer_means_checked": 3600,
+  "exact_confirmation_predictions_checked": 300,
+  "exact_oracle_cells_checked": 1080,
+  "B_0p30": {
+    "two_mean_BA": 0.87,
+    "single_mean_oracle_BA": 0.39,
+    "difference": 0.48,
+    "positive_groups": 9,
+    "per_group": [
+      {
+        "cooler_valve_accumulator": [
+          3,
+          73,
+          90
+        ],
+        "n": 30,
+        "two_mean_BA": 0.43333333333333335,
+        "oracle_single_BA": 0.6333333333333333,
+        "gap": -0.2
+      },
+      {
+        "cooler_valve_accumulator": [
+          3,
+          90,
+          100
+        ],
+        "n": 30,
+        "two_mean_BA": 0.7666666666666667,
+        "oracle_single_BA": 0.6,
+        "gap": 0.16666666666666666
+      },
+      {
+        "cooler_valve_accumulator": [
+          20,
+          73,
+          100
+        ],
+        "n": 30,
+        "two_mean_BA": 1.0,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6666666666666666
+      },
+      {
+        "cooler_valve_accumulator": [
+          20,
+          90,
+          100
+        ],
+        "n": 30,
+        "two_mean_BA": 1.0,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6666666666666666
+      },
+      {
+        "cooler_valve_accumulator": [
+          20,
+          100,
+          90
+        ],
+        "n": 30,
+        "two_mean_BA": 1.0,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6666666666666666
+      },
+      {
+        "cooler_valve_accumulator": [
+          20,
+          100,
+          130
+        ],
+        "n": 30,
+        "two_mean_BA": 0.8333333333333334,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.5
+      },
+      {
+        "cooler_valve_accumulator": [
+          100,
+          73,
+          100
+        ],
+        "n": 30,
+        "two_mean_BA": 0.7666666666666667,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.43333333333333335
+      },
+      {
+        "cooler_valve_accumulator": [
+          100,
+          80,
+          115
+        ],
+        "n": 30,
+        "two_mean_BA": 0.9333333333333333,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6
+      },
+      {
+        "cooler_valve_accumulator": [
+          100,
+          90,
+          100
+        ],
+        "n": 30,
+        "two_mean_BA": 0.9666666666666667,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6333333333333333
+      },
+      {
+        "cooler_valve_accumulator": [
+          100,
+          100,
+          115
+        ],
+        "n": 30,
+        "two_mean_BA": 1.0,
+        "oracle_single_BA": 0.3333333333333333,
+        "gap": 0.6666666666666666
+      }
+    ]
+  },
+  "all_frozen_primary_gates_verified": true,
+  "new_model_or_tuning": false
+}

@@ -1,0 +1,199 @@
+{
+  "joint_region_results_sha256": "518b922ead278b09b6461a481f40d9e436d14e6a87923229e00e18389a014723",
+  "groups": 10,
+  "panel_rows": 300,
+  "independent_source_sha256": "19118df10877d3ed646035ae609dab2cb855fc14d487500417bb67415d54afcf",
+  "raw_scope": "fit and pilot numeric signals only",
+  "distinct_continuous_cells": 180,
+  "pilot_row_decisions_compared": 54000,
+  "unresolved_main": 49,
+  "unresolved_independent": 2,
+  "contradictory_definite_decisions": 0,
+  "original_witnesses_independently_replayed": 7107,
+  "basic_grid_cells_including_exact_single_equivalences": 40,
+  "verified_frontier": [
+    {
+      "gain_ppm": null,
+      "axis": "gain_ppm",
+      "radii": [
+        3925,
+        3935
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          253,
+          253
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 0,
+      "axis": "error_micro",
+      "radii": [
+        14545,
+        14573
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 500,
+      "axis": "error_micro",
+      "radii": [
+        12663,
+        12704
+      ],
+      "independent_bounds": [
+        [
+          256,
+          256
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 1000,
+      "axis": "error_micro",
+      "radii": [
+        10802,
+        10839
+      ],
+      "independent_bounds": [
+        [
+          256,
+          256
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 1500,
+      "axis": "error_micro",
+      "radii": [
+        8886,
+        8984
+      ],
+      "independent_bounds": [
+        [
+          256,
+          256
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 2000,
+      "axis": "error_micro",
+      "radii": [
+        7016,
+        7090
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 2500,
+      "axis": "error_micro",
+      "radii": [
+        5125,
+        5149
+      ],
+      "independent_bounds": [
+        [
+          255,
+          256
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 3000,
+      "axis": "error_micro",
+      "radii": [
+        3441,
+        3515
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 3500,
+      "axis": "error_micro",
+      "radii": [
+        1610,
+        1634
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    },
+    {
+      "gain_ppm": 3750,
+      "axis": "error_micro",
+      "radii": [
+        683,
+        707
+      ],
+      "independent_bounds": [
+        [
+          255,
+          255
+        ],
+        [
+          254,
+          254
+        ]
+      ]
+    }
+  ],
+  "row_comparison_sha256": "998951fa0ecf23e961ed7e3b910dcd6dee699c94f9c76197a8eb4ecaaed3bb1d",
+  "wall_seconds": 6.593829600024037,
+  "finished_utc": "2026-11-18T08:06:18.836670+00:00"
+}

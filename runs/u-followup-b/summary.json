@@ -1,0 +1,396 @@
+{
+  "start_utc": "2026-11-18T06:46:26.632717+00:00",
+  "end_utc": "2026-11-18T06:46:27.538481+00:00",
+  "wall_seconds": 0.9064673000248149,
+  "cpu_seconds": 0.90625,
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "host_platform": "Windows-11-10.0.26200-SP0",
+  "source_and_protocol_sha256": {
+    "assets/uci447.zip": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "runs/h-pilot-20261118T054802882611Z/split.csv": "9e0082df0e50c3aab6a0f9a27024e473bb4bff54adddb3e8495a39e93ae625c3",
+    "protocols/u-followup-b.md": "50598d79504e7b746d074b5e409f67e42c0718fd1e202201b633c924dd0eb04f",
+    "code/u_followup_b.py": "adb612cebc49914ecc42d970fe1c672ac5c87a1b90882be64ce8db6ddf0f0b7b",
+    "code/window_bound.py": "b6bbe6ae5d485f5337e623e776b3e888203a808173c8386f47efc33289d56624",
+    "code/hydraulic_screen.py": "472668b3dff7359eaa131e67709aa0b1435da0b1b3096cd73e1555dd2731600c"
+  },
+  "fit_n": 849,
+  "fit_groups": 28,
+  "pilot_n": 300,
+  "pilot_groups": 10,
+  "pair_double_centers_integer": [
+    -764376000,
+    -740697000,
+    -729443000
+  ],
+  "single_fixed_window_index": 10,
+  "single_cv_by_window_exact": [
+    "674/1995",
+    "23/70",
+    "77/120",
+    "27/40",
+    "619/840",
+    "139/210",
+    "611/840",
+    "11/14",
+    "3/4",
+    "3/4",
+    "181/210",
+    "661/840"
+  ],
+  "single_double_centers_integer": [
+    784292000,
+    760338000,
+    748773000
+  ],
+  "integer_scale_per_l_min": 50000000,
+  "two_window": [
+    {
+      "gain_percent": 0.0,
+      "window_error_l_min": 0.0,
+      "equivalent_drift_max_change_in_50s_l_min": 0.0,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0,
+      "certified_n": 271,
+      "cyclewise_robust_ba": 0.9033333333333333,
+      "condition_shared_min_ba": 0.9033333333333333,
+      "panel_shared_min_ba": 0.9033333333333333,
+      "panel_worst_gain_percent": 0.0,
+      "panel_witness_gain_fraction": "0"
+    },
+    {
+      "gain_percent": 0.0,
+      "window_error_l_min": 0.005,
+      "equivalent_drift_max_change_in_50s_l_min": 0.01,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0002,
+      "certified_n": 252,
+      "cyclewise_robust_ba": 0.84,
+      "condition_shared_min_ba": 0.84,
+      "panel_shared_min_ba": 0.84,
+      "panel_worst_gain_percent": 0.0,
+      "panel_witness_gain_fraction": "0"
+    },
+    {
+      "gain_percent": 0.0,
+      "window_error_l_min": 0.01,
+      "equivalent_drift_max_change_in_50s_l_min": 0.02,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0004,
+      "certified_n": 236,
+      "cyclewise_robust_ba": 0.7866666666666666,
+      "condition_shared_min_ba": 0.7866666666666666,
+      "panel_shared_min_ba": 0.7866666666666666,
+      "panel_worst_gain_percent": 0.0,
+      "panel_witness_gain_fraction": "0"
+    },
+    {
+      "gain_percent": 0.0,
+      "window_error_l_min": 0.025,
+      "equivalent_drift_max_change_in_50s_l_min": 0.05,
+      "equivalent_drift_max_rate_l_min_per_s": 0.001,
+      "certified_n": 193,
+      "cyclewise_robust_ba": 0.6433333333333333,
+      "condition_shared_min_ba": 0.6433333333333333,
+      "panel_shared_min_ba": 0.6433333333333333,
+      "panel_worst_gain_percent": 0.0,
+      "panel_witness_gain_fraction": "0"
+    },
+    {
+      "gain_percent": 0.25,
+      "window_error_l_min": 0.0,
+      "equivalent_drift_max_change_in_50s_l_min": 0.0,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0,
+      "certified_n": 238,
+      "cyclewise_robust_ba": 0.7933333333333333,
+      "condition_shared_min_ba": 0.7933333333333333,
+      "panel_shared_min_ba": 0.8466666666666667,
+      "panel_worst_gain_percent": 0.22743324943209864,
+      "panel_witness_gain_fraction": "834/366701"
+    },
+    {
+      "gain_percent": 0.25,
+      "window_error_l_min": 0.005,
+      "equivalent_drift_max_change_in_50s_l_min": 0.01,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0002,
+      "certified_n": 220,
+      "cyclewise_robust_ba": 0.7333333333333333,
+      "condition_shared_min_ba": 0.7333333333333333,
+      "panel_shared_min_ba": 0.8233333333333334,
+      "panel_worst_gain_percent": -0.25,
+      "panel_witness_gain_fraction": "-1/400"
+    },
+    {
+      "gain_percent": 0.25,
+      "window_error_l_min": 0.01,
+      "equivalent_drift_max_change_in_50s_l_min": 0.02,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0004,
+      "certified_n": 212,
+      "cyclewise_robust_ba": 0.7066666666666667,
+      "condition_shared_min_ba": 0.7066666666666667,
+      "panel_shared_min_ba": 0.77,
+      "panel_worst_gain_percent": -0.17076930619181724,
+      "panel_witness_gain_fraction": "-627/367162"
+    },
+    {
+      "gain_percent": 0.25,
+      "window_error_l_min": 0.025,
+      "equivalent_drift_max_change_in_50s_l_min": 0.05,
+      "equivalent_drift_max_rate_l_min_per_s": 0.001,
+      "certified_n": 117,
+      "cyclewise_robust_ba": 0.39,
+      "condition_shared_min_ba": 0.5166666666666667,
+      "panel_shared_min_ba": 0.5266666666666666,
+      "panel_worst_gain_percent": 0.23119609657516757,
+      "panel_witness_gain_fraction": "842/364193"
+    },
+    {
+      "gain_percent": 0.5,
+      "window_error_l_min": 0.0,
+      "equivalent_drift_max_change_in_50s_l_min": 0.0,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0,
+      "certified_n": 213,
+      "cyclewise_robust_ba": 0.71,
+      "condition_shared_min_ba": 0.71,
+      "panel_shared_min_ba": 0.81,
+      "panel_worst_gain_percent": -0.5,
+      "panel_witness_gain_fraction": "-1/200"
+    },
+    {
+      "gain_percent": 0.5,
+      "window_error_l_min": 0.005,
+      "equivalent_drift_max_change_in_50s_l_min": 0.01,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0002,
+      "certified_n": 201,
+      "cyclewise_robust_ba": 0.67,
+      "condition_shared_min_ba": 0.6833333333333333,
+      "panel_shared_min_ba": 0.7866666666666666,
+      "panel_worst_gain_percent": -0.5,
+      "panel_witness_gain_fraction": "-1/200"
+    },
+    {
+      "gain_percent": 0.5,
+      "window_error_l_min": 0.01,
+      "equivalent_drift_max_change_in_50s_l_min": 0.02,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0004,
+      "certified_n": 165,
+      "cyclewise_robust_ba": 0.55,
+      "condition_shared_min_ba": 0.6033333333333334,
+      "panel_shared_min_ba": 0.73,
+      "panel_worst_gain_percent": -0.5,
+      "panel_witness_gain_fraction": "-1/200"
+    },
+    {
+      "gain_percent": 0.5,
+      "window_error_l_min": 0.025,
+      "equivalent_drift_max_change_in_50s_l_min": 0.05,
+      "equivalent_drift_max_rate_l_min_per_s": 0.001,
+      "certified_n": 88,
+      "cyclewise_robust_ba": 0.29333333333333333,
+      "condition_shared_min_ba": 0.4633333333333333,
+      "panel_shared_min_ba": 0.5033333333333333,
+      "panel_worst_gain_percent": 0.44374484369163464,
+      "panel_witness_gain_fraction": "6605/1488468"
+    },
+    {
+      "gain_percent": 1.0,
+      "window_error_l_min": 0.0,
+      "equivalent_drift_max_change_in_50s_l_min": 0.0,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0,
+      "certified_n": 105,
+      "cyclewise_robust_ba": 0.35,
+      "condition_shared_min_ba": 0.49333333333333335,
+      "panel_shared_min_ba": 0.66,
+      "panel_worst_gain_percent": 0.9869677394537056,
+      "panel_witness_gain_fraction": "3592/363943"
+    },
+    {
+      "gain_percent": 1.0,
+      "window_error_l_min": 0.005,
+      "equivalent_drift_max_change_in_50s_l_min": 0.01,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0002,
+      "certified_n": 90,
+      "cyclewise_robust_ba": 0.3,
+      "condition_shared_min_ba": 0.47333333333333333,
+      "panel_shared_min_ba": 0.6133333333333333,
+      "panel_worst_gain_percent": 0.9899927635326068,
+      "panel_witness_gain_fraction": "3598/363437"
+    },
+    {
+      "gain_percent": 1.0,
+      "window_error_l_min": 0.01,
+      "equivalent_drift_max_change_in_50s_l_min": 0.02,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0004,
+      "certified_n": 85,
+      "cyclewise_robust_ba": 0.2833333333333333,
+      "condition_shared_min_ba": 0.4666666666666667,
+      "panel_shared_min_ba": 0.6,
+      "panel_worst_gain_percent": 0.9977570443686383,
+      "panel_witness_gain_fraction": "3621/362914"
+    },
+    {
+      "gain_percent": 1.0,
+      "window_error_l_min": 0.025,
+      "equivalent_drift_max_change_in_50s_l_min": 0.05,
+      "equivalent_drift_max_rate_l_min_per_s": 0.001,
+      "certified_n": 46,
+      "cyclewise_robust_ba": 0.15333333333333332,
+      "condition_shared_min_ba": 0.33,
+      "panel_shared_min_ba": 0.44333333333333336,
+      "panel_worst_gain_percent": -1.0,
+      "panel_witness_gain_fraction": "-1/100"
+    },
+    {
+      "gain_percent": 2.0,
+      "window_error_l_min": 0.0,
+      "equivalent_drift_max_change_in_50s_l_min": 0.0,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0,
+      "certified_n": 15,
+      "cyclewise_robust_ba": 0.05,
+      "condition_shared_min_ba": 0.3333333333333333,
+      "panel_shared_min_ba": 0.3466666666666667,
+      "panel_worst_gain_percent": -2.0,
+      "panel_witness_gain_fraction": "-1/50"
+    },
+    {
+      "gain_percent": 2.0,
+      "window_error_l_min": 0.005,
+      "equivalent_drift_max_change_in_50s_l_min": 0.01,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0002,
+      "certified_n": 7,
+      "cyclewise_robust_ba": 0.023333333333333334,
+      "condition_shared_min_ba": 0.3333333333333333,
+      "panel_shared_min_ba": 0.3333333333333333,
+      "panel_worst_gain_percent": -2.0,
+      "panel_witness_gain_fraction": "-1/50"
+    },
+    {
+      "gain_percent": 2.0,
+      "window_error_l_min": 0.01,
+      "equivalent_drift_max_change_in_50s_l_min": 0.02,
+      "equivalent_drift_max_rate_l_min_per_s": 0.0004,
+      "certified_n": 3,
+      "cyclewise_robust_ba": 0.01,
+      "condition_shared_min_ba": 0.3333333333333333,
+      "panel_shared_min_ba": 0.3333333333333333,
+      "panel_worst_gain_percent": -2.0,
+      "panel_witness_gain_fraction": "-1/50"
+    },
+    {
+      "gain_percent": 2.0,
+      "window_error_l_min": 0.025,
+      "equivalent_drift_max_change_in_50s_l_min": 0.05,
+      "equivalent_drift_max_rate_l_min_per_s": 0.001,
+      "certified_n": 2,
+      "cyclewise_robust_ba": 0.006666666666666667,
+      "condition_shared_min_ba": 0.3233333333333333,
+      "panel_shared_min_ba": 0.3333333333333333,
+      "panel_worst_gain_percent": -2.0,
+      "panel_witness_gain_fraction": "-1/50"
+    }
+  ],
+  "single_window": [
+    {
+      "bias_l_min": 0.0,
+      "certified_n": 270,
+      "cyclewise_robust_ba": 0.9,
+      "condition_shared_min_ba": 0.9,
+      "panel_shared_min_ba": 0.9,
+      "panel_worst_bias_l_min": 0.0,
+      "panel_witness_bias_l_min_fraction": "0"
+    },
+    {
+      "bias_l_min": 0.025,
+      "certified_n": 234,
+      "cyclewise_robust_ba": 0.78,
+      "condition_shared_min_ba": 0.78,
+      "panel_shared_min_ba": 0.85,
+      "panel_worst_bias_l_min": -0.025,
+      "panel_witness_bias_l_min_fraction": "-1/40"
+    },
+    {
+      "bias_l_min": 0.05,
+      "certified_n": 196,
+      "cyclewise_robust_ba": 0.6533333333333333,
+      "condition_shared_min_ba": 0.6733333333333333,
+      "panel_shared_min_ba": 0.7733333333333333,
+      "panel_worst_bias_l_min": -0.05,
+      "panel_witness_bias_l_min_fraction": "-1/20"
+    },
+    {
+      "bias_l_min": 0.06,
+      "certified_n": 152,
+      "cyclewise_robust_ba": 0.5066666666666667,
+      "condition_shared_min_ba": 0.6,
+      "panel_shared_min_ba": 0.7,
+      "panel_worst_bias_l_min": -0.06,
+      "panel_witness_bias_l_min_fraction": "-3/50"
+    },
+    {
+      "bias_l_min": 0.1,
+      "certified_n": 84,
+      "cyclewise_robust_ba": 0.28,
+      "condition_shared_min_ba": 0.47,
+      "panel_shared_min_ba": 0.5966666666666667,
+      "panel_worst_bias_l_min": 0.08347,
+      "panel_witness_bias_l_min_fraction": "8347/100000"
+    },
+    {
+      "bias_l_min": 0.3,
+      "certified_n": 1,
+      "cyclewise_robust_ba": 0.0033333333333333335,
+      "condition_shared_min_ba": 0.3333333333333333,
+      "panel_shared_min_ba": 0.3333333333333333,
+      "panel_worst_bias_l_min": -0.3,
+      "panel_witness_bias_l_min_fraction": "-3/10"
+    }
+  ],
+  "historical_comparison": {
+    "bound_on_abs_endpoint_minus_scaled_center": 155352344000,
+    "signed_int64_max": 9223372036854775807,
+    "signed_int32_max": 2147483647,
+    "int32": {
+      "scaled_centers": [
+        871811328,
+        -1055255968,
+        70144032
+      ],
+      "low_predictions_by_grade": [
+        0,
+        300,
+        0
+      ],
+      "high_predictions_by_grade": [
+        0,
+        300,
+        0
+      ],
+      "certified_n": 100
+    },
+    "int64": {
+      "scaled_centers": [
+        -76437600000,
+        -74069700000,
+        -72944300000
+      ],
+      "low_predictions_by_grade": [
+        211,
+        86,
+        3
+      ],
+      "high_predictions_by_grade": [
+        0,
+        80,
+        220
+      ],
+      "certified_n": 2
+    }
+  },
+  "protocol_deviation": "First run halted on historical 100/300 equality. Exact endpoints disagree. The original 100-fold scaling overflows int32 centers on Windows. The rerun preserves the frozen fit, panel, grids and estimands and checks the archived int32 count separately from elementwise int64 versus rational truth. The original confirmation sensor data were not opened.",
+  "invariants": "bounds, ties, witnesses, monotonicity, nominal control, int32 reproduction and independent int64 equivalence to rational joint certification passed",
+  "output_sha256": {
+    "cycle_robust.csv": "043879d8b3277e482fe1ab39c864be6d450d99fdb8ba4418bc4799331a6b66e5",
+    "margin_summary.csv": "15ebb294493448f6619e6a1e0338572f6220a811de7993e63734cab469d31a5b",
+    "shared_witnesses.csv": "c96b113ad0ba083a51fa95630df5196eb6c769c98745efeabd9fd6daa625f5e0",
+    "single_predictions.csv": "506fb6d76dc2b7cf97959656aaa72121851a8fdb85f5ebe4ec19cd1306ad89d1",
+    "strata.csv": "900ffce48241fe57233368835163877c35b152b8246eac313c4328342ccdef3d",
+    "used_split.csv": "a845081da465f9ae5786039af82cc9401ea73a72f47bb41a3446d2dd2efcc440"
+  }
+}

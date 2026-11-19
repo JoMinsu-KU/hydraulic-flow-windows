@@ -1,0 +1,75 @@
+{
+  "start": "2026-11-18T06:56:36.381907+00:00",
+  "finish": "2026-11-18T06:56:46.548238+00:00",
+  "wall_s": 10.16655800002627,
+  "raw_numeric_rows": {
+    "fit": 849,
+    "pilot": 300,
+    "confirmation": 0
+  },
+  "b": {
+    "certification_rows_and_margins": 6000,
+    "certified_bounds_recomputed": 12000,
+    "nuisance_sharing_and_joint_scenarios": 26,
+    "aggregate_scores": 78,
+    "single_held_condition_cv_scores": 12,
+    "joint_example": {
+      "cycle": 0.006666666666666667,
+      "group": 0.3233333333333333,
+      "global": 0.3333333333333333
+    }
+  },
+  "c": {
+    "arms": 30,
+    "subject_predictions": 9000,
+    "grid_decisions_aggregated": 549000,
+    "group_and_class_cells": 900,
+    "direct_model_arm_refits": 9,
+    "raw_source_predictions_verified": 2700,
+    "primary_source_correct": {
+      "single": 227,
+      "pair": 263,
+      "pair_shape": 297
+    }
+  },
+  "supplement": {
+    "independent_forest_fits": 4,
+    "independently_replayed_failure_witnesses": 472,
+    "decisions_checked_61grid": 73200,
+    "positive_continuum_certificates_checked": 728,
+    "positive_candidate_levels_probed": 182336,
+    "coverage": "Every failure witness replayed and every positive evaluated via a separate enumeration of an overinclusive set of float32 boundaries and both neighbors.",
+    "methods": {
+      "one_original": {
+        "nominal": 294,
+        "grid": 1,
+        "continuous": 1,
+        "failing_offsets_replayed": 299
+      },
+      "one_augmented": {
+        "nominal": 258,
+        "grid": 138,
+        "continuous": 133,
+        "failing_offsets_replayed": 167
+      },
+      "two_original": {
+        "nominal": 297,
+        "grid": 297,
+        "continuous": 297,
+        "failing_offsets_replayed": 3
+      },
+      "two_augmented": {
+        "nominal": 297,
+        "grid": 297,
+        "continuous": 297,
+        "failing_offsets_replayed": 3
+      }
+    }
+  },
+  "frozen_secondary": "frozen-secondary-correction.json",
+  "input_sha256": {
+    "archive": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "split": "9e0082df0e50c3aab6a0f9a27024e473bb4bff54adddb3e8495a39e93ae625c3",
+    "verifier": "c76eb143261395f92318458c2fd7f72e5c5541199eb2e42453b51f4f73b87b44"
+  }
+}

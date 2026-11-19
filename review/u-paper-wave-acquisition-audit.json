@@ -1,0 +1,141 @@
+{
+  "status": "VERIFIED",
+  "started_utc": "2026-11-18T09:51:42.402734+00:00",
+  "finished_utc": "2026-11-18T09:51:52.599037+00:00",
+  "affinity": [
+    3
+  ],
+  "numpy": "1.26.4",
+  "sklearn": "1.5.1",
+  "fit_n": 849,
+  "pilot_n": 300,
+  "rows": 3600,
+  "refit_forests": 8,
+  "failure_witnesses_replayed": 1674,
+  "saved_successes": 1926,
+  "saved_unknown": 0,
+  "distinct_off_grid_biases_per_success": 1021,
+  "dense_queries_on_saved_successes": 1966446,
+  "dense_counterexamples": 0,
+  "independent_success_continuous_proofs": 1926,
+  "independent_boxes_traversed": 3290,
+  "per_layout_shift_amp": {
+    "one": {
+      "-1/0.1": {
+        "failed_witnesses_replayed": 123,
+        "saved_pass": 177,
+        "alternate_continuous_proofs": 177,
+        "dense_probes": 180717
+      },
+      "-1/0.3": {
+        "failed_witnesses_replayed": 123,
+        "saved_pass": 177,
+        "alternate_continuous_proofs": 177,
+        "dense_probes": 180717
+      },
+      "0/0.1": {
+        "failed_witnesses_replayed": 73,
+        "saved_pass": 227,
+        "alternate_continuous_proofs": 227,
+        "dense_probes": 231767
+      },
+      "0/0.3": {
+        "failed_witnesses_replayed": 73,
+        "saved_pass": 227,
+        "alternate_continuous_proofs": 227,
+        "dense_probes": 231767
+      },
+      "1/0.1": {
+        "failed_witnesses_replayed": 114,
+        "saved_pass": 186,
+        "alternate_continuous_proofs": 186,
+        "dense_probes": 189906
+      },
+      "1/0.3": {
+        "failed_witnesses_replayed": 114,
+        "saved_pass": 186,
+        "alternate_continuous_proofs": 186,
+        "dense_probes": 189906
+      }
+    },
+    "two": {
+      "-1/0.1": {
+        "failed_witnesses_replayed": 199,
+        "saved_pass": 101,
+        "alternate_continuous_proofs": 101,
+        "dense_probes": 103121
+      },
+      "-1/0.3": {
+        "failed_witnesses_replayed": 201,
+        "saved_pass": 99,
+        "alternate_continuous_proofs": 99,
+        "dense_probes": 101079
+      },
+      "0/0.1": {
+        "failed_witnesses_replayed": 126,
+        "saved_pass": 174,
+        "alternate_continuous_proofs": 174,
+        "dense_probes": 177654
+      },
+      "0/0.3": {
+        "failed_witnesses_replayed": 200,
+        "saved_pass": 100,
+        "alternate_continuous_proofs": 100,
+        "dense_probes": 102100
+      },
+      "1/0.1": {
+        "failed_witnesses_replayed": 128,
+        "saved_pass": 172,
+        "alternate_continuous_proofs": 172,
+        "dense_probes": 175612
+      },
+      "1/0.3": {
+        "failed_witnesses_replayed": 200,
+        "saved_pass": 100,
+        "alternate_continuous_proofs": 100,
+        "dense_probes": 102100
+      }
+    }
+  },
+  "all_shift_results_verified": {
+    "one": {
+      "fixed": 137,
+      "known_phase": 207,
+      "0.1": {
+        "pass": 137,
+        "fail": 163,
+        "unknown": 0
+      },
+      "0.3": {
+        "pass": 137,
+        "fail": 163,
+        "unknown": 0
+      }
+    },
+    "two": {
+      "fixed": 96,
+      "known_phase": 293,
+      "0.1": {
+        "pass": 72,
+        "fail": 228,
+        "unknown": 0
+      },
+      "0.3": {
+        "pass": 1,
+        "fail": 299,
+        "unknown": 0
+      }
+    }
+  },
+  "mathematical_review": [
+    "For z_i=max(x_i+b,0), on intervals with k active raw entries, the centred sample z_i\u2212mean(z) has derivative \u2212k/50 before its own activation and 1\u2212k/50 after it. Its minimum is at its own activation clipped to the allowed interval and its maximum at an endpoint.",
+    "Within each interval between any two successive raw activations every centred component and five-component mean is affine. Evaluating all activations and endpoints gives coordinatewise exact real extrema for these 60 features, including segment means. The producer's separate-coordinate lower and upper averages also enclose all segment means, even when extrema occur at different biases.",
+    "For ordered raw values x_i>=x_j, max(x_i+b,0)\u2212max(x_j+b,0) is nonnegative and nondecreasing in b. The range is therefore nondecreasing, as is population SD since variance is the sum of squared pair differences divided by 50 squared. Centering preserves both. Endpoint extrema suffice.",
+    "The alternate proof visits all sklearn leaves reachable inside each padded float32 feature box and requires both summed class probability margins to exceed 1e\u22129, subdividing inconclusive boxes. It does not call the producer's box, bounds, tree packing, certification, or model prediction routines. Float64 construction uses a conservative 2e\u221210 relative-to-scale allowance before monotone float32 conversion. The off-grid replay alone does not prove continuous correctness."
+  ],
+  "scope": "Common additive bias with simulated zero floor, fixed registered sample shifts \u22121/0/+1, one FS1 rig; success is for the stated bounded acquisition model.",
+  "result_sha256": "8352c433798701680b8524b1b6f9b9c89aba4d769fb0637d32cfd2d82c451331",
+  "source_hashes_verified": 9,
+  "audit_script_sha256": "f24b8d0e48641d4e4a9fdb25f0ce6c97e4e422d0e6825e3c149e55ece7238ea8",
+  "independent_decimal_parser_sha256": "9228787f6da55b96df2b1efcae3413ec7a650f1c7ed9ae03bca96a0d6eb71d74"
+}

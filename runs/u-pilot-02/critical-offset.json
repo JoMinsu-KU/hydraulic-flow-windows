@@ -1,0 +1,150 @@
+{
+  "target_fraction": "17/20",
+  "n": 300,
+  "groups": [
+    [
+      3,
+      73,
+      100
+    ],
+    [
+      3,
+      73,
+      115
+    ],
+    [
+      3,
+      80,
+      130
+    ],
+    [
+      20,
+      73,
+      115
+    ],
+    [
+      20,
+      80,
+      90
+    ],
+    [
+      20,
+      80,
+      100
+    ],
+    [
+      20,
+      90,
+      115
+    ],
+    [
+      20,
+      90,
+      130
+    ],
+    [
+      100,
+      80,
+      100
+    ],
+    [
+      100,
+      80,
+      130
+    ]
+  ],
+  "scale": 50000000,
+  "rule": "first B >= 0 where mean_g max_j U_gj < 17/20",
+  "unique_distances": 15238,
+  "closed_threshold": {
+    "raw_sum_distance": 5899000,
+    "offset_fraction_l_min": "5899/100000",
+    "offset_l_min": 0.05899,
+    "upper_fraction": "127/150",
+    "upper": 0.8466666666666667,
+    "group_optima": [
+      "4/5",
+      "11/15",
+      "13/15",
+      "13/15",
+      "4/5",
+      "13/15",
+      "14/15",
+      "1",
+      "9/10",
+      "7/10"
+    ],
+    "milp_check": true,
+    "milp_cells": 120
+  },
+  "previous_event": {
+    "raw_sum_distance": 5898000,
+    "offset_fraction_l_min": "2949/50000",
+    "offset_l_min": 0.05898,
+    "upper_fraction": "17/20",
+    "upper": 0.85,
+    "group_optima": [
+      "4/5",
+      "11/15",
+      "13/15",
+      "13/15",
+      "4/5",
+      "13/15",
+      "29/30",
+      "1",
+      "9/10",
+      "7/10"
+    ],
+    "milp_check": true,
+    "milp_cells": 120
+  },
+  "interval_interpretation": "U(B) equals the previous-event value up to but excluding the critical B; at critical B the lower value applies.",
+  "no_crossing": false,
+  "already_below_at_zero": false,
+  "binary_search_trace": {
+    "5603000": "271/300",
+    "5843000": "87/100",
+    "5873000": "257/300",
+    "5888000": "64/75",
+    "5896000": "17/20",
+    "5898000": "17/20",
+    "5899000": "127/150",
+    "5900000": "127/150",
+    "5903000": "127/150",
+    "5962000": "62/75",
+    "6082000": "241/300",
+    "6571000": "73/100",
+    "10202000": "101/150",
+    "12460000": "101/150"
+  },
+  "fixture_checks": {
+    "contact_triggers": {
+      "first_diameter": 4,
+      "prior_diameter": 0,
+      "target": "17/20"
+    },
+    "equality_is_possible": {
+      "first_diameter": 20,
+      "prior_diameter": 16,
+      "target": "2/3"
+    },
+    "never_crosses": {
+      "first_diameter": null,
+      "prior_diameter": 20,
+      "target": "1/3"
+    },
+    "zero_already_fails": {
+      "first_diameter": 0,
+      "prior_diameter": null,
+      "target": "17/20"
+    },
+    "group_and_window_oracle": {
+      "first_diameter": 4,
+      "prior_diameter": 2,
+      "target": "17/20"
+    }
+  },
+  "panel_sha256": "a152677be24e3529dead728361d04c81599a46522012a8c88128613a770be4e5",
+  "code_sha256": "f1fb160d9cb03759d17aa812f74245b78ff1b0b86b0af005f328eb3b38a3f972",
+  "milp_audit_code_sha256": "9d162db1403343c82a421057435235bd09355ae72ebd119f8550f8579a881106"
+}

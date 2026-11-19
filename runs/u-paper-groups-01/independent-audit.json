@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "seconds": 5.129012999939732,
+  "counts": {
+    "scalar_predictions_replayed": 6174,
+    "wave_predictions_independently_refit": 240,
+    "folds_audited": 68,
+    "milp_constraints_systems_at_B030": 456
+  },
+  "strict_roles": [
+    "fit",
+    "pilot"
+  ],
+  "confirmed_groups_accessed": 0,
+  "code_sha256": "95d8fa1d394e9236d8722a2032cbf585ef070c2b56032f3a09fc5678411d1b87"
+}

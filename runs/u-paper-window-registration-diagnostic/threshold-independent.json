@@ -1,0 +1,12 @@
+{
+  "fit_rows": 849,
+  "candidate_cutoffs": 1630,
+  "ordered_cutoff_pairs": 1329265,
+  "optimal_cutoff_pairs": 5,
+  "selected_cutoff_integer": [
+    -376276000,
+    -376276000
+  ],
+  "fit_max_accuracy": 0.6095238095238096,
+  "verified": true
+}

@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-11-18T09:54:03.653436+00:00",
+  "independent_source": "Python csv per absolute UTC minute, independent representations and split, sklearn refit",
+  "published_prediction_rows_checked": 9620,
+  "fit_forests": 4,
+  "unique_complete_minutes": 2407,
+  "source_recording_date_macro_scores_verified": 8,
+  "scope": "PONAR only, no ZeMA rows",
+  "results_sha256": "5159646e4a41d8ef42eded248f4901d3351636e095b41f9e5ec6d5facbb9a93b"
+}

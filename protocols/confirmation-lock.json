@@ -1,0 +1,97 @@
+{
+  "frozen_utc": "2026-11-18T06:15:33.936531+00:00",
+  "candidate": "U",
+  "code_sha256": "b6bbe6ae5d485f5337e623e776b3e888203a808173c8386f47efc33289d56624",
+  "inputs": {
+    "code/window_bound.py": "b6bbe6ae5d485f5337e623e776b3e888203a808173c8386f47efc33289d56624",
+    "code/hydraulic_screen.py": "472668b3dff7359eaa131e67709aa0b1435da0b1b3096cd73e1555dd2731600c",
+    "code/window_bound_milp_audit.py": "9d162db1403343c82a421057435235bd09355ae72ebd119f8550f8579a881106",
+    "code/window_boundary_threshold.py": "f1fb160d9cb03759d17aa812f74245b78ff1b0b86b0af005f328eb3b38a3f972",
+    "assets/uci447.zip": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "protocols/u-confirm-v1.md": "08fc13e7611395d660017f0963d43af5414eb11b1bf3b914ce31abb746280088",
+    "protocols/u-window-identifiability-v1.md": "df62a8d6f600c1933f3ea00f16b22ee15e7f3401676810cbb52e315b58d7672b",
+    "runs/h-pilot-20261118T054802882611Z/split.csv": "9e0082df0e50c3aab6a0f9a27024e473bb4bff54adddb3e8495a39e93ae625c3",
+    "runs/u-pilot-02/results.json": "54cfcdbffce4e810c5eb51f53d1fa1323f795268a1ab19093580bc89b5c7d97e",
+    "runs/u-pilot-02/independent-milp.json": "075d036c6a42b4965662dc7bd7cfdea220f28f825d8381c2eb50314c5c0d71af",
+    "runs/u-pilot-02/critical-offset.json": "3ec7a97bfedec7306c4e6ecb8fea70ff4991fc4b2dda2075ad589235cb5d078d",
+    "runs/u-shape-pilot/result.json": "3404bd83dced71fa7cade35aa0eda8976ed589d738338c91c87814b73ac69577",
+    "review/u-exposure-and-scope.md": "7a6fd820380b91b34468cdf1ee3df307a4725bc2e5501852e41b188f89d7e96b"
+  },
+  "pair": [
+    0,
+    10
+  ],
+  "double_centers_integer": [
+    -764376000,
+    -740697000,
+    -729443000
+  ],
+  "mean_scale": 50000000,
+  "scope": "one observed test rig, 10 previously unscored nuisance-setting tuples, finite full panel; no inferential population alpha used",
+  "operational_bias_L_min": 0.3,
+  "sample_counts": [
+    300,
+    10
+  ],
+  "confirm_group_ids_from_existing_metadata": [
+    [
+      3,
+      73,
+      90
+    ],
+    [
+      3,
+      90,
+      100
+    ],
+    [
+      20,
+      73,
+      100
+    ],
+    [
+      20,
+      90,
+      100
+    ],
+    [
+      20,
+      100,
+      90
+    ],
+    [
+      20,
+      100,
+      130
+    ],
+    [
+      100,
+      73,
+      100
+    ],
+    [
+      100,
+      80,
+      115
+    ],
+    [
+      100,
+      90,
+      100
+    ],
+    [
+      100,
+      100,
+      115
+    ]
+  ],
+  "decision": "L2 >= .85 and U1 < .85 and L2-U1 >= .10 and at least 8/10 positive group gaps; all four required; no tweak or repeat.",
+  "maximum_new_confirmation_attempts": 1,
+  "checks": {
+    "independent_integer_program_milps_required": 1080,
+    "train_only_centers_match": true,
+    "pilot_no_holdout": true,
+    "extra_noise_and_gain": "secondary frozen sensitivity",
+    "raw_shape_control": "pilot only; another message representation, no exclusion of single-window waveforms"
+  }
+}

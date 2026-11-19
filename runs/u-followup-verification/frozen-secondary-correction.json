@@ -1,0 +1,94 @@
+{
+  "units": "doubled class median in integer sum units, multiplied by 100 for gain evaluation",
+  "integer_centers": [
+    -764376000,
+    -740697000,
+    -729443000
+  ],
+  "x100_correct": [
+    -76437600000,
+    -74069700000,
+    -72944300000
+  ],
+  "x100_int32_wrap": [
+    871811328,
+    -1055255968,
+    70144032
+  ],
+  "mechanism": "NumPy 1.26 on Windows used default int32 for the array created from Python integers. Multiplication by 100 wrapped before its distance to int64 endpoints was evaluated.",
+  "historical_audit_gap": "Primary nominal predictions and one-mean oracle cells were audited. The old raw-reconstruction check does not compare extra_gain_and_noise_lower to an independently calculated secondary score.",
+  "panel_only": {
+    "pilot": {
+      "panel_sha256": "a152677be24e3529dead728361d04c81599a46522012a8c88128613a770be4e5",
+      "saved_results_sha256": "54cfcdbffce4e810c5eb51f53d1fa1323f795268a1ab19093580bc89b5c7d97e",
+      "subset": "original frozen secondary; saved integer means only",
+      "rows": 300,
+      "saved_oracle_cells_verified": 1080,
+      "nominal_correct": 271,
+      "nominal_group_grade_BA": 0.9033333333333333,
+      "exact_joint_correct": 2,
+      "exact_correct_by_grade": [
+        0,
+        0,
+        2
+      ],
+      "historical_int32_joint_correct": 100,
+      "historical_int32_correct_by_grade": [
+        0,
+        100,
+        0
+      ],
+      "exact_joint_group_grade_BA": 0.006666666666666667,
+      "historical_int32_group_grade_BA": 0.3333333333333333,
+      "exact_by_group": {
+        "(3, 73, 100)": 0.03333333333333333,
+        "(3, 73, 115)": 0.03333333333333333,
+        "(3, 80, 130)": 0.0,
+        "(20, 73, 115)": 0.0,
+        "(20, 80, 90)": 0.0,
+        "(20, 80, 100)": 0.0,
+        "(20, 90, 115)": 0.0,
+        "(20, 90, 130)": 0.0,
+        "(100, 80, 100)": 0.0,
+        "(100, 80, 130)": 0.0
+      },
+      "primary_bounds_and_unchanged_predictions_verified": true
+    },
+    "confirmation": {
+      "panel_sha256": "9ca2f210e55344f24fb234d572af99ce413a680d2e45544a0a773e30d89bdb5b",
+      "saved_results_sha256": "7f0a9fb8890d5fb82163fdd216a5c985cbc4fea1a30d13115bcdd494fa26c2aa",
+      "subset": "original frozen secondary; saved integer means only",
+      "rows": 300,
+      "saved_oracle_cells_verified": 1080,
+      "nominal_correct": 261,
+      "nominal_group_grade_BA": 0.87,
+      "exact_joint_correct": 2,
+      "exact_correct_by_grade": [
+        0,
+        0,
+        2
+      ],
+      "historical_int32_joint_correct": 100,
+      "historical_int32_correct_by_grade": [
+        0,
+        100,
+        0
+      ],
+      "exact_joint_group_grade_BA": 0.006666666666666667,
+      "historical_int32_group_grade_BA": 0.3333333333333333,
+      "exact_by_group": {
+        "(3, 73, 90)": 0.03333333333333333,
+        "(3, 90, 100)": 0.03333333333333333,
+        "(20, 73, 100)": 0.0,
+        "(20, 90, 100)": 0.0,
+        "(20, 100, 90)": 0.0,
+        "(20, 100, 130)": 0.0,
+        "(100, 73, 100)": 0.0,
+        "(100, 80, 115)": 0.0,
+        "(100, 90, 100)": 0.0,
+        "(100, 100, 115)": 0.0
+      },
+      "primary_bounds_and_unchanged_predictions_verified": true
+    }
+  }
+}

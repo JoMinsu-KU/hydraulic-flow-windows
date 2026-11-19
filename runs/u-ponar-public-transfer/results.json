@@ -1,0 +1,689 @@
+{
+  "started_utc": "2026-11-18T09:46:24.055903+00:00",
+  "archive_sha256": "a739fa32d2160ca23b892ae6a3baef57b1f607e1083714500d9438b6f78474fa",
+  "archive_bytes": 7017294,
+  "source_url": "https://www.kaggle.com/datasets/mbjunior/valve-plate-failure-prediction-in-hydraulic-pumps",
+  "publication_doi": "10.3390/app14167183",
+  "protocol_sha256": "6035c1554c199ce392f1822fad7cb2beb52b1a1553b54f9c6f520dbdcc7a5870",
+  "code_sha256": "96d1a65b0fbdeb5cf2f238be0d776f27f646ad74706886b73c56e3fa2ac2d793",
+  "inventory": {
+    "OT": {
+      "rows": 68347,
+      "days": [
+        "2023-03-02",
+        "2023-03-03",
+        "2023-12-21",
+        "2023-12-22",
+        "2024-01-04",
+        "2024-01-05"
+      ],
+      "incomplete_minutes": 40,
+      "nonfinite_minutes": 0,
+      "complete_minutes": 1120
+    },
+    "UT1": {
+      "rows": 54053,
+      "days": [
+        "2023-05-25",
+        "2023-05-26",
+        "2023-05-30",
+        "2023-06-06",
+        "2024-01-03"
+      ],
+      "incomplete_minutes": 32,
+      "nonfinite_minutes": 109,
+      "complete_minutes": 775
+    },
+    "UT2": {
+      "rows": 14333,
+      "days": [
+        "2024-03-14"
+      ],
+      "incomplete_minutes": 2,
+      "nonfinite_minutes": 0,
+      "complete_minutes": 238
+    },
+    "UT3": {
+      "rows": 16472,
+      "days": [
+        "2024-03-15"
+      ],
+      "incomplete_minutes": 2,
+      "nonfinite_minutes": 0,
+      "complete_minutes": 274
+    }
+  },
+  "sklearn": "1.5.1",
+  "experiments": {
+    "operating_pressure": {
+      "fit_n": 928,
+      "fit_days": [
+        "2023-03-02",
+        "2023-03-03",
+        "2023-05-26",
+        "2023-05-30",
+        "2023-06-06",
+        "2023-12-21",
+        "2023-12-22"
+      ],
+      "test_n": 1108,
+      "fit_grade_counts": {
+        "0": 432,
+        "1": 496
+      },
+      "methods": {
+        "single_shape": {
+          "primary": {
+            "recall": {
+              "specificity": 0.5411350844277674,
+              "sensitivity": 0.4207650273224044,
+              "date_macro_ba": 0.4809500558750859
+            },
+            "robust_recall": {
+              "specificity": 0.5411350844277674,
+              "sensitivity": 0.4207650273224044,
+              "date_macro_ba": 0.4809500558750859
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 260,
+              "correct": 133,
+              "robust_correct": 133,
+              "predicted_damaged": 127,
+              "recall": 0.5115384615384615,
+              "robust_recall": 0.5115384615384615
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 205,
+              "correct": 117,
+              "robust_correct": 117,
+              "predicted_damaged": 88,
+              "recall": 0.5707317073170731,
+              "robust_recall": 0.5707317073170731
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 183,
+              "correct": 154,
+              "robust_correct": 154,
+              "predicted_damaged": 154,
+              "recall": 0.8415300546448088,
+              "robust_recall": 0.8415300546448088
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 250,
+              "correct": 0,
+              "robust_correct": 0,
+              "predicted_damaged": 0,
+              "recall": 0.0,
+              "robust_recall": 0.0
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 210,
+              "correct": 170,
+              "robust_correct": 170,
+              "predicted_damaged": 170,
+              "recall": 0.8095238095238095,
+              "robust_recall": 0.8095238095238095
+            }
+          ],
+          "training_medians": null
+        },
+        "pair_shape": {
+          "primary": {
+            "recall": {
+              "specificity": 0.7317542213883677,
+              "sensitivity": 0.06830601092896176,
+              "date_macro_ba": 0.4000301161586647
+            },
+            "robust_recall": {
+              "specificity": 0.7317542213883677,
+              "sensitivity": 0.06830601092896176,
+              "date_macro_ba": 0.4000301161586647
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 260,
+              "correct": 189,
+              "robust_correct": 189,
+              "predicted_damaged": 71,
+              "recall": 0.7269230769230769,
+              "robust_recall": 0.7269230769230769
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 205,
+              "correct": 151,
+              "robust_correct": 151,
+              "predicted_damaged": 54,
+              "recall": 0.7365853658536585,
+              "robust_recall": 0.7365853658536585
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 183,
+              "correct": 25,
+              "robust_correct": 25,
+              "predicted_damaged": 25,
+              "recall": 0.1366120218579235,
+              "robust_recall": 0.1366120218579235
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 250,
+              "correct": 0,
+              "robust_correct": 0,
+              "predicted_damaged": 0,
+              "recall": 0.0,
+              "robust_recall": 0.0
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 210,
+              "correct": 62,
+              "robust_correct": 62,
+              "predicted_damaged": 62,
+              "recall": 0.29523809523809524,
+              "robust_recall": 0.29523809523809524
+            }
+          ],
+          "training_medians": null
+        },
+        "two_mean_difference": {
+          "primary": {
+            "recall": {
+              "specificity": 0.5860694183864916,
+              "sensitivity": 0.4313989071038251,
+              "date_macro_ba": 0.5087341627451584
+            },
+            "robust_recall": {
+              "specificity": 0.5860694183864916,
+              "sensitivity": 0.4313989071038251,
+              "date_macro_ba": 0.5087341627451584
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 260,
+              "correct": 183,
+              "robust_correct": 183,
+              "predicted_damaged": 77,
+              "recall": 0.7038461538461539,
+              "robust_recall": 0.7038461538461539
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 205,
+              "correct": 96,
+              "robust_correct": 96,
+              "predicted_damaged": 109,
+              "recall": 0.4682926829268293,
+              "robust_recall": 0.4682926829268293
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 183,
+              "correct": 62,
+              "robust_correct": 62,
+              "predicted_damaged": 62,
+              "recall": 0.33879781420765026,
+              "robust_recall": 0.33879781420765026
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 250,
+              "correct": 131,
+              "robust_correct": 131,
+              "predicted_damaged": 131,
+              "recall": 0.524,
+              "robust_recall": 0.524
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 210,
+              "correct": 89,
+              "robust_correct": 89,
+              "predicted_damaged": 89,
+              "recall": 0.4238095238095238,
+              "robust_recall": 0.4238095238095238
+            }
+          ],
+          "training_medians": [
+            0.0017546020853025368,
+            0.005435651964440069
+          ]
+        },
+        "single_level_mean": {
+          "primary": {
+            "recall": {
+              "specificity": 0.6935741088180112,
+              "sensitivity": 0.3725245901639344,
+              "date_macro_ba": 0.5330493494909728
+            },
+            "robust_recall": {
+              "specificity": 0.6553470919324578,
+              "sensitivity": 0.338327868852459,
+              "date_macro_ba": 0.4968374803924584
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 260,
+              "correct": 211,
+              "robust_correct": 200,
+              "predicted_damaged": 49,
+              "recall": 0.8115384615384615,
+              "robust_recall": 0.7692307692307693
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 205,
+              "correct": 118,
+              "robust_correct": 111,
+              "predicted_damaged": 87,
+              "recall": 0.5756097560975609,
+              "robust_recall": 0.5414634146341464
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 183,
+              "correct": 69,
+              "robust_correct": 66,
+              "predicted_damaged": 69,
+              "recall": 0.3770491803278688,
+              "robust_recall": 0.36065573770491804
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 250,
+              "correct": 92,
+              "robust_correct": 79,
+              "predicted_damaged": 92,
+              "recall": 0.368,
+              "robust_recall": 0.316
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 210,
+              "correct": 84,
+              "robust_correct": 83,
+              "predicted_damaged": 84,
+              "recall": 0.4,
+              "robust_recall": 0.3952380952380952
+            }
+          ],
+          "training_medians": [
+            64.23055461870564,
+            62.08641508449646
+          ]
+        }
+      }
+    },
+    "all_complete": {
+      "fit_n": 1110,
+      "fit_days": [
+        "2023-03-02",
+        "2023-03-03",
+        "2023-05-25",
+        "2023-05-26",
+        "2023-05-30",
+        "2023-06-06",
+        "2023-12-21",
+        "2023-12-22"
+      ],
+      "test_n": 1297,
+      "fit_grade_counts": {
+        "0": 582,
+        "1": 528
+      },
+      "methods": {
+        "single_shape": {
+          "primary": {
+            "recall": {
+              "specificity": 0.17817307556721237,
+              "sensitivity": 0.5630252100840336,
+              "date_macro_ba": 0.370599142825623
+            },
+            "robust_recall": {
+              "specificity": 0.17817307556721237,
+              "sensitivity": 0.5630252100840336,
+              "date_macro_ba": 0.370599142825623
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 307,
+              "correct": 27,
+              "robust_correct": 27,
+              "predicted_damaged": 280,
+              "recall": 0.08794788273615635,
+              "robust_recall": 0.08794788273615635
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 231,
+              "correct": 62,
+              "robust_correct": 62,
+              "predicted_damaged": 169,
+              "recall": 0.2683982683982684,
+              "robust_recall": 0.2683982683982684
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 238,
+              "correct": 149,
+              "robust_correct": 149,
+              "predicted_damaged": 149,
+              "recall": 0.6260504201680672,
+              "robust_recall": 0.6260504201680672
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 274,
+              "correct": 137,
+              "robust_correct": 137,
+              "predicted_damaged": 137,
+              "recall": 0.5,
+              "robust_recall": 0.5
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 247,
+              "correct": 222,
+              "robust_correct": 222,
+              "predicted_damaged": 222,
+              "recall": 0.8987854251012146,
+              "robust_recall": 0.8987854251012146
+            }
+          ],
+          "training_medians": null
+        },
+        "pair_shape": {
+          "primary": {
+            "recall": {
+              "specificity": 0.28962731079994924,
+              "sensitivity": 0.7056830031282586,
+              "date_macro_ba": 0.4976551569641039
+            },
+            "robust_recall": {
+              "specificity": 0.28962731079994924,
+              "sensitivity": 0.7056830031282586,
+              "date_macro_ba": 0.4976551569641039
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 307,
+              "correct": 126,
+              "robust_correct": 126,
+              "predicted_damaged": 181,
+              "recall": 0.41042345276872966,
+              "robust_recall": 0.41042345276872966
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 231,
+              "correct": 39,
+              "robust_correct": 39,
+              "predicted_damaged": 192,
+              "recall": 0.16883116883116883,
+              "robust_recall": 0.16883116883116883
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 238,
+              "correct": 170,
+              "robust_correct": 170,
+              "predicted_damaged": 170,
+              "recall": 0.7142857142857143,
+              "robust_recall": 0.7142857142857143
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 274,
+              "correct": 191,
+              "robust_correct": 191,
+              "predicted_damaged": 191,
+              "recall": 0.6970802919708029,
+              "robust_recall": 0.6970802919708029
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 247,
+              "correct": 166,
+              "robust_correct": 166,
+              "predicted_damaged": 166,
+              "recall": 0.6720647773279352,
+              "robust_recall": 0.6720647773279352
+            }
+          ],
+          "training_medians": null
+        },
+        "two_mean_difference": {
+          "primary": {
+            "recall": {
+              "specificity": 0.5779079769307782,
+              "sensitivity": 0.4774428019382936,
+              "date_macro_ba": 0.5276753894345358
+            },
+            "robust_recall": {
+              "specificity": 0.5779079769307782,
+              "sensitivity": 0.4774428019382936,
+              "date_macro_ba": 0.5276753894345358
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 307,
+              "correct": 202,
+              "robust_correct": 202,
+              "predicted_damaged": 105,
+              "recall": 0.6579804560260586,
+              "robust_recall": 0.6579804560260586
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 231,
+              "correct": 115,
+              "robust_correct": 115,
+              "predicted_damaged": 116,
+              "recall": 0.49783549783549785,
+              "robust_recall": 0.49783549783549785
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 238,
+              "correct": 110,
+              "robust_correct": 110,
+              "predicted_damaged": 110,
+              "recall": 0.46218487394957986,
+              "robust_recall": 0.46218487394957986
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 274,
+              "correct": 135,
+              "robust_correct": 135,
+              "predicted_damaged": 135,
+              "recall": 0.4927007299270073,
+              "robust_recall": 0.4927007299270073
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 247,
+              "correct": 116,
+              "robust_correct": 116,
+              "predicted_damaged": 116,
+              "recall": 0.46963562753036436,
+              "robust_recall": 0.46963562753036436
+            }
+          ],
+          "training_medians": [
+            0.002041271546518675,
+            0.005392972208852598
+          ]
+        },
+        "single_level_mean": {
+          "primary": {
+            "recall": {
+              "specificity": 0.6836231087045419,
+              "sensitivity": 0.3995276942893946,
+              "date_macro_ba": 0.5415754014969683
+            },
+            "robust_recall": {
+              "specificity": 0.659235444251731,
+              "sensitivity": 0.36977856836165124,
+              "date_macro_ba": 0.5145070063066911
+            }
+          },
+          "by_day": [
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-04",
+              "n": 307,
+              "correct": 239,
+              "robust_correct": 232,
+              "predicted_damaged": 68,
+              "recall": 0.7785016286644951,
+              "robust_recall": 0.755700325732899
+            },
+            {
+              "role": "primary",
+              "plate": "OT",
+              "day": "2024-01-05",
+              "n": 231,
+              "correct": 136,
+              "robust_correct": 130,
+              "predicted_damaged": 95,
+              "recall": 0.5887445887445888,
+              "robust_recall": 0.5627705627705628
+            },
+            {
+              "role": "primary",
+              "plate": "UT2",
+              "day": "2024-03-14",
+              "n": 238,
+              "correct": 112,
+              "robust_correct": 110,
+              "predicted_damaged": 112,
+              "recall": 0.47058823529411764,
+              "robust_recall": 0.46218487394957986
+            },
+            {
+              "role": "primary",
+              "plate": "UT3",
+              "day": "2024-03-15",
+              "n": 274,
+              "correct": 90,
+              "robust_correct": 76,
+              "predicted_damaged": 90,
+              "recall": 0.3284671532846715,
+              "robust_recall": 0.2773722627737226
+            },
+            {
+              "role": "same_plate",
+              "plate": "UT1",
+              "day": "2024-01-03",
+              "n": 247,
+              "correct": 99,
+              "robust_correct": 99,
+              "predicted_damaged": 99,
+              "recall": 0.4008097165991903,
+              "robust_recall": 0.4008097165991903
+            }
+          ],
+          "training_medians": [
+            64.04661794940574,
+            62.085758841338276
+          ]
+        }
+      }
+    }
+  },
+  "predictions_sha256": "94e5b4a4d711d7a6ebdd12f4ed849b1e0fb0c22476804b59af9b693f9c811390",
+  "elapsed_seconds": 1.9133121999911964,
+  "finished_utc": "2026-11-18T09:46:25.968601+00:00"
+}
