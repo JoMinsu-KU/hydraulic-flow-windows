@@ -1,0 +1,58 @@
+{
+  "analysis": "post-hoc timing sensitivity, reused pilot, no confirmation cycles",
+  "fit_n": 849,
+  "pilot_n": 300,
+  "candidate_starts_samples": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45
+  ],
+  "nominal_late_start_sample": 500,
+  "window_length_samples": 50,
+  "common_clock_shifts_samples": [
+    -1,
+    0,
+    1
+  ],
+  "training_logo_balanced_joint_accuracy": {
+    "5": "88/105",
+    "10": "88/105",
+    "15": "88/105",
+    "20": "88/105",
+    "25": "703/840",
+    "30": "47/56",
+    "35": "88/105",
+    "40": "88/105",
+    "45": "41/84"
+  },
+  "selection_tie_break": "earliest start",
+  "selected_start_sample": 30,
+  "training_medians_l_min": [
+    -7.84056,
+    -7.60184,
+    -7.48593
+  ],
+  "correct_early_nominal_late": [
+    268,
+    269,
+    268
+  ],
+  "correct_at_all_three": 265,
+  "all_three_correct_by_grade": [
+    88,
+    85,
+    92
+  ],
+  "original_nominal_plus1_and_both": [
+    271,
+    129,
+    107
+  ],
+  "pilot_single_window_aligned_oracle_at_B_0p30": 117
+}

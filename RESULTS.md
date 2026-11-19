@@ -17,7 +17,7 @@ From the repository root, run `python -B replay_appendices.py` with Python 3.10 
 | C. Gain, differential error and numerical certificates | `runs/u-followup-b/cycle_robust.csv` contains each cycle's signed margin and attainable differential interval. The replay verifies 6,000 intervals and both trained decision boundaries. `runs/u-wave-gain-axis-audit/frontier-refined.json` and `refined-frontier-endpoints.csv` in the same directory contain 10 brackets (nine residual limits and the gain-only limit) and 6,000 endpoint decisions. Each passing bracket endpoint certifies 255/300 cycles and each failing endpoint certifies 254/300. `region-row-agreement.csv` contains 54,000 independent-to-original decision comparisons. `runs/u-wave-gain-region/cycles.csv` and `runs/u-wave-gain-witness/row_witnesses.csv` contain the main cycle decisions and concrete wrong-class parameter settings. |
 | D. Second-rig denominators and reproducibility | `runs/u-ponar-public-transfer/predictions.csv` identifies the arm, recording date, plate, UTC minute, truth and prediction. The replay checks each date's denominators, nominal hits and robust hits for both pressure selections. The main external comparison includes 898 nonoverlapping minutes from two healthy and two unseen damaged-plate dates; 210 minutes on a later date with the previously seen UT1 plate are scored separately. |
 
-The four figures can be rebuilt with the following commands from the repository root (tested with NumPy 1.26.4 and Matplotlib 3.9.2).
+The four figures based on result summaries can be rebuilt with the following commands from the repository root (tested with NumPy 1.26.4 and Matplotlib 3.9.2).
 
 ```text
 python manuscript/ieee-access/figures/make_figures.py --out regenerated
@@ -39,3 +39,7 @@ The first script creates `offset-bound.pdf`, `held-conditions.pdf` and `acquisit
 The supplied records are computational results on public data. The calibration and transfer data needed for field validation are unavailable. The repository contains no metrological certificate for FS1 and no direct transfer test of the frozen three-grade rule on another physical pump.
 
 The seven tables originally stored as compressed CSV are distributed here as plain CSV with identical decompressed bytes. Historical JSON manifests retain their original filenames and hashes. Use the repository checksum manifest for this release.
+
+## Analyses added in v1.1.0
+
+The [raw group refit](RUN_GROUPS.md) reconstructs split selection and fits from the original archive. [Reference timing](runs/u-interior-reference/) records the common three-shift scores and the 300 pilot predictions for a training-selected early reference. The eligible starts were 0.5–4.5 s in 0.5-s steps, the late start was 50 s and both windows retained 50 readings. The aligned single-mean oracle uses the union of twelve original and nine candidate starts. A one-sample shift on the original zero-second window can be tested only in the positive direction within the recorded cycle. For the fifth figure the [waveform plotting script](manuscript/ieee-access/figures/make_observed_cycle.py) draws raw FS1 and PS2 from the same pilot cycle in the original ZeMA archive. The source measurements are attributed to the ZeMA dataset authors (CC BY 4.0).

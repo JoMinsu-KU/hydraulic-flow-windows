@@ -1,0 +1,26 @@
+{
+  "status": "verified",
+  "modes": {
+    "condition_logo": {
+      "groups": 38,
+      "rows": 1149
+    },
+    "strictly_past": {
+      "groups": 30,
+      "rows": 909
+    }
+  },
+  "verified_folds": 68,
+  "inner_candidate_scores_verified": 4488,
+  "waveform_forests_refitted": 136,
+  "verified_predictions": 10290,
+  "unique_oracle_cells_verified": 1368,
+  "oracle_radii_L_min": [
+    0.0,
+    0.1,
+    0.3
+  ],
+  "numpy": "1.26.4",
+  "scikit_learn": "1.5.1",
+  "elapsed_seconds": 46.753
+}

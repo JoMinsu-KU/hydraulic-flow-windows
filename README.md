@@ -37,12 +37,21 @@ The optional computations below were tested with Python 3.12. Install the packag
 python replay_primary.py --archive /path/to/uci447.zip
 python replay_waveforms.py --archive /path/to/uci447.zip
 python replay_joint_error.py --archive /path/to/uci447.zip
+python replay_groups.py --archive /path/to/uci447.zip --out regenerated/group-refit
+python replay_reference_timing.py --archive /path/to/uci447.zip --out regenerated/reference-timing
 python replay_ponar.py --archive /path/to/ponar-valve-plate-v1.zip
 python manuscript/ieee-access/figures/make_figures.py --out regenerated
 python manuscript/ieee-access/figures/make_phase_evidence.py --runs runs --out regenerated/phase-evidence.pdf
+python manuscript/ieee-access/figures/make_observed_cycle.py --archive /path/to/uci447.zip --out regenerated/observed-cycle.pdf
 ```
 
-The primary raw-data replay recomputes 3,600 held-out means and the three training medians. The waveform scripts reproduce the matched 50-sample comparison and the specified joint-error case. The PONAR replay refits four forests and compares 9,620 prediction records. The four published vector figures are available in [figures/](figures/). For the event search, error certificates, condition splits, field-validation limits and data attribution, see the [results and provenance guide](RESULTS.md).
+The primary raw-data replay recomputes 3,600 held-out means and the three training medians. The waveform scripts reproduce the matched 50-sample comparison and the specified joint-error case. The PONAR replay refits four forests and compares 9,620 prediction records. The five manuscript vector figures are available in [figures/](figures/). For the event search, error certificates, condition splits, field-validation limits and data attribution, see the [results and provenance guide](RESULTS.md).
+
+## Condition-wise refits and clock shifts
+
+The [group refit instructions](RUN_GROUPS.md) describe how to regenerate the 38 condition-wise and 30 forward folds from raw FS1 and PS1 measurements, including window selection, medians, predictions, and grade recalls. The [archived split and predictions](runs/u-paper-groups-01/) are the reference for checking the new fits. The [regenerated results](runs/u-group-refit/validation_scores.csv) give the comparison by validation scheme. The [grade recalls](runs/u-group-refit/grade_recall.csv) report the associated denominators. The independent 10-condition confirmation uses a separate replay.
+
+The [interior-reference experiment](runs/u-interior-reference/results.json) uses the previously examined pilot. Of nine starts, training-only selection chose 3.0 s. Among 300 pilot cycles, 265 remained correct at all three joint window shifts (−0.1, 0, +0.1 s). The [measured example cycle](figures/observed-cycle.pdf) shows which samples enter and leave the original reference window after a delay. The raw cycle is from the [ZeMA hydraulic data](https://doi.org/10.24432/C5CW21), licensed under CC BY 4.0.
 
 ## Files
 
